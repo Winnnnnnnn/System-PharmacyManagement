@@ -1,0 +1,424 @@
+/*清除全部样式*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: "Microsoft YaHei";
+    background: #f5f6f7;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+input, textarea {
+    background:none;
+    outline: none;
+    border: none;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+button {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+.fl {
+    /*左浮动*/
+    float: left
+}
+.fr {
+    /*右浮动*/
+    float: right
+}
+.cf{
+    /*清除浮动*/
+    clear: both;
+}
+.tl {
+    /*左对齐*/
+    text-align: left;
+}
+.tc {
+    /*居中*/
+    text-align: center
+}
+.tr {
+    /*右对齐*/
+    text-align: right;
+}
+/*淡入动画开始*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    /*初始状态 透明度为0*/
+    40% {
+        opacity: 0;
+    }
+    /*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }
+    /*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in { /*针对webkit内核*/
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*淡入动画结束*/
+
+.LoginBody {
+    /*登录页*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 0px;
+}
+
+.LoginTop {
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    padding: 20px 200px;
+}
+
+.LoginTop img {
+    height: 100px;
+    float: left;
+}
+
+.LoginTopLine {
+    width: 1px;
+    height: 100px;
+    background: #e6e6e6;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.LoginTopTitle {
+    font-size: 30px;
+    color: #000;
+    float: left;
+    line-height: 100px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.LoginBottom {
+    width: 100%;
+    height: 80%;
+    background: url("../image/login_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    padding:50px 340px;
+}
+
+.LoginBg {
+    /*登录框*/
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    float: right;
+    text-align: center;
+}
+
+.LoginBgTopTitle {
+    color: #16c08e;
+    font-size: 25px;
+}
+
+.LoginBgTopLine {
+    height: 3px;
+    background: #16c08e;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.LoginBgInputBg {
+    /*输入框背景*/
+    border: 1px solid #e6e6e6;
+    padding: 3px 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.LoginBgInputBg:hover {
+    border: 1px solid #16c08e;
+}
+
+.LoginBgInputBg img {
+    height: 40px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+}
+
+.LoginBgInputBg input {
+    line-height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+    float: left;
+}
+
+.LoginBgInputBg input:hover .LoginBgInputBg{
+    border: 1px solid #16c08e;
+}
+
+.LoginBgInputBg input:focus .LoginBgInputBg{
+    border: 1px solid #16c08e;
+}
+
+.LoginBgInputBg select {
+    border: none;
+    outline:none;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.LoginBgInputBg select option {
+    line-height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.LoginBgInputBg select:hover {
+    border: none;
+    outline:none;
+}
+
+.LoginBgInputBg select:focus {
+    border: none;
+    outline:none;
+}
+
+.LoginBg button {
+    background: #16c08e;
+    color: #fff;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.LoginBg button:hover {
+    background: #0cb95f;
+}
+
+.sigma-content{
+    text-align: center;
+    background-color: #fff;
+}
+.sigma-middle-line:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #2c2c2c;/*颜色需与主题大背景色一致*/
+    position: relative;
+    top: 10px;/*调节线高*/
+    left: 0;
+}
+.sigma-line-text{
+    display: inline-block;
+    background: #fff;
+    padding: 0 18px 0 18px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.HomeBody {
+    /*首页布局*/
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: url("../image/banner_bg.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.BaseNav {
+    /*通用的顶部导航栏*/
+    width: 100%;
+    /*background: #fff;*/
+    /*设置文本不可选中*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.BaseNav li {
+    display:inline-block;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    transition: all 0.6s;
+}
+
+.BaseNav li:hover {
+    /*放大特效*/
+    transform: scale(1.1);
+}
+
+.BaseNavLogo {
+    height: 60px;
+    padding-left:30px;
+    padding-right:30px;
+    vertical-align: middle;
+}
+
+.BaseNav li a {
+    font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
+
+.BaseNav li a img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.BaseBottom {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+.BaseMain {
+    /*主操作区域*/
+    width: 100%;
+    padding: 30px 80px;
+    position: fixed;
+    top: 60px;
+    bottom: 30px;
+    overflow-y: auto;
+}
+
+.BaseMainBody {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    overflow-y: auto;
+    -moz-box-shadow: 0px 5px 5px #ccc; /* 老的 Firefox */
+    box-shadow: 0px 5px 5px #ccc;
+    display: none;
+}
+
+.BaseMainBody table {
+    background: #fff;
+}
+
+.BaseHomeLeftNav {
+    /*分类按钮*/
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    top:50%;
+    transform:translateY(-50%);
+    display: none;
+}
+
+.BaseHomeLeftNavList {
+    float: left;
+    width: 300px;
+    background: #fff;
+    height: 500px;
+    display: none;
+    -moz-box-shadow: 0px 5px 5px #ccc; /* 老的 Firefox */
+    box-shadow: 0px 5px 5px #ccc;
+    overflow-y: auto;
+}
+
+.BaseHomeLeftNavList li {
+    width: 100%;
+}
+
+.BaseHomeLeftNavList li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.BaseHomeLeftNavList li a:hover {
+    background: #16c08e;
+    color: #fff;
+}
+
+.BaseHomeLeftNavBtn {
+    padding: 20px 5px;
+    background: #16c08e;
+    vertical-align: middle;
+    color: #fff;
+    transition: all 0.6s;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+}
+
+.BaseHomeLeftNavBtn:hover {
+    padding: 20px 10px;
+    transform: scale(1.1);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*#16c08e*/
+/*#0cb95f*/
